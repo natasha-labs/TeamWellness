@@ -1,3 +1,5 @@
+Ниже — полностью обновлённый index.html. Старый код удали целиком и вставь этот.
+
 <!DOCTYPE html>
 <html lang="ru" class="scroll-smooth">
 <head>
@@ -7,71 +9,112 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style>
-    body{background:#f8fbff}.glass{background:rgba(255,255,255,.86);backdrop-filter:blur(18px)}.shadow-soft{box-shadow:0 24px 60px rgba(15,23,42,.10)}.hero{background:radial-gradient(circle at 10% 10%,rgba(99,102,241,.16),transparent 30%),radial-gradient(circle at 80% 0%,rgba(125,211,252,.25),transparent 35%),linear-gradient(135deg,#fff,#eef4ff 55%,#fff)}.card{transition:.25s}.card:hover{
-
-  transform:translateY(-8px);
-
-  box-shadow:0 25px 60px rgba(15,23,42,.15);
-
-  border-color:rgba(79,70,229,.4);box-shadow:0 18px 44px rgba(15,23,42,.10);border-color:rgba(79,70,229,.28)}.navy{color:#0b1647}.bg-navy{background:#0b1647}
+    body{background:#f8fbff}
+    .glass{background:rgba(255,255,255,.86);backdrop-filter:blur(18px)}
+    .shadow-soft{box-shadow:0 24px 60px rgba(15,23,42,.10)}
+    .hero{background:radial-gradient(circle at 10% 10%,rgba(99,102,241,.16),transparent 30%),radial-gradient(circle at 80% 0%,rgba(125,211,252,.25),transparent 35%),linear-gradient(135deg,#fff,#eef4ff 55%,#fff)}
+    .card{transition:.25s}
+    .card:hover{transform:translateY(-8px);box-shadow:0 25px 60px rgba(15,23,42,.15);border-color:rgba(79,70,229,.4)}
+    .tariff-card{min-height:100%;display:flex;flex-direction:column}
+    .tariff-card a{margin-top:auto}
+    .navy{color:#0b1647}
+    .bg-navy{background:#0b1647}
   </style>
 </head>
 <body class="text-slate-800 font-sans antialiased">
 <header class="fixed top-0 left-0 right-0 z-50 border-b border-slate-200 glass">
   <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
     <a href="#" class="flex items-center gap-3">
-      <div class="relative w-10 h-10"><div class="absolute inset-[9px] rounded-full border-[5px] border-indigo-600"></div><div class="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-indigo-600"></div><div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-indigo-500"></div><div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-indigo-400"></div><div class="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-indigo-500"></div></div>
+      <div class="relative w-10 h-10">
+        <div class="absolute inset-[9px] rounded-full border-[5px] border-indigo-600"></div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-indigo-600"></div>
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-indigo-500"></div>
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-indigo-400"></div>
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-indigo-500"></div>
+      </div>
       <span class="text-xl md:text-2xl font-black navy">TeamWellness</span>
     </a>
-    <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600"><a href="#programs" class="hover:text-indigo-600">Программы</a><a href="#problems" class="hover:text-indigo-600">Запросы</a><a href="#process" class="hover:text-indigo-600">Как проходит</a><a href="#team" class="hover:text-indigo-600">Команда</a><a href="#tariffs" class="hover:text-indigo-600">Тарифы</a><a href="#cases" class="hover:text-indigo-600">Отзывы</a></nav>
+    <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+      <a href="#programs" class="hover:text-indigo-600">Программы</a>
+      <a href="#problems" class="hover:text-indigo-600">Запросы</a>
+      <a href="#process" class="hover:text-indigo-600">Как проходит</a>
+      <a href="#team" class="hover:text-indigo-600">Команда</a>
+      <a href="#tariffs" class="hover:text-indigo-600">Тарифы</a>
+      <a href="#cases" class="hover:text-indigo-600">Отзывы</a>
+    </nav>
     <a href="#callback" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-3 rounded-xl font-bold text-sm shadow-lg shadow-indigo-600/20">Получить предложение</a>
   </div>
 </header>
 <main>
 <section class="hero pt-28 md:pt-36 pb-16 md:pb-24">
   <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
-    <div><span class="inline-flex items-center gap-2 bg-white border border-indigo-100 text-indigo-700 text-sm font-bold px-4 py-2 rounded-full mb-6"><span class="w-2 h-2 rounded-full bg-indigo-600"></span>Системные решения для HR и C-Level</span><h1 class="text-4xl md:text-6xl font-black leading-[1.05] navy mb-6">Профессиональная психологическая поддержка для защиты бизнеса от выгорания</h1><p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mb-5">Помогаем компаниям сохранять ключевых сотрудников, снижать токсичность в командах и превращать заботу о благополучии в операционную устойчивость.</p><p class="text-indigo-700 font-bold leading-relaxed mb-8 max-w-2xl">Более 20 мероприятий, посвященных вопросам психического и физического здоровья, стресса, осознанности и многому другому.</p><div class="flex flex-col sm:flex-row gap-4 mb-8"><a href="#programs" class="inline-flex justify-center items-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-7 py-4 rounded-2xl font-bold shadow-xl shadow-indigo-600/20">Просмотреть программы поддержки →</a><a href="tel:+79963362868" class="inline-flex justify-center items-center gap-3 bg-white border border-slate-200 text-[#0b1647] px-6 py-4 rounded-2xl font-bold shadow-soft whitespace-nowrap text-base">
-
-  <span class="text-xl">☎</span>
-
-  <span>+7 996 336 28 68</span>
-
-</a></div><div class="grid grid-cols-3 gap-4 max-w-xl"><div class="bg-white border border-white rounded-2xl p-4 shadow-soft"><div class="text-2xl font-black navy">20+</div><div class="text-xs text-slate-500 font-semibold">мероприятий</div></div><div class="bg-white border border-white rounded-2xl p-4 shadow-soft"><div class="text-2xl font-black navy">5</div><div class="text-xs text-slate-500 font-semibold">направлений</div></div><div class="bg-white border border-white rounded-2xl p-4 shadow-soft"><div class="text-2xl font-black navy">30–90</div><div class="text-xs text-slate-500 font-semibold">минут</div></div></div></div>
-    <div class="relative"><div class="absolute -inset-6 bg-indigo-200/40 blur-3xl rounded-full"></div><div class="relative bg-white p-3 rounded-[2rem] shadow-soft"><img src="images/hero.jpg" class="w-full h-[360px] md:h-[480px] object-cover rounded-[1.5rem]" alt="Онлайн-встреча команды"></div></div>
+    <div>
+      <span class="inline-flex items-center gap-2 bg-white border border-indigo-100 text-indigo-700 text-sm font-bold px-4 py-2 rounded-full mb-6">
+        <span class="w-2 h-2 rounded-full bg-indigo-600"></span>Системные решения для HR и C-Level
+      </span>
+      <h1 class="text-4xl md:text-6xl font-black leading-[1.05] navy mb-6">
+        Профессиональная психологическая поддержка для защиты бизнеса от выгорания
+      </h1>
+      <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mb-5">
+        Помогаем компаниям сохранять ключевых сотрудников, снижать токсичность в командах и превращать заботу о благополучии в операционную устойчивость.
+      </p>
+      <p class="text-indigo-700 font-bold leading-relaxed mb-8 max-w-2xl">
+        Более 20 мероприятий, посвященных вопросам психического и физического здоровья, стресса, осознанности и многому другому.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 mb-8">
+        <a href="#programs" class="inline-flex justify-center items-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white px-7 py-4 rounded-2xl font-bold shadow-xl shadow-indigo-600/20">
+          Просмотреть программы поддержки →
+        </a>
+        <a href="tel:+79963362868" class="inline-flex justify-center items-center gap-3 bg-white border border-slate-200 text-[#0b1647] px-6 py-4 rounded-2xl font-bold shadow-soft whitespace-nowrap text-base">
+          <span class="text-lg text-indigo-600">☎</span>
+          <span>+7 996 336 28 68</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-3 gap-4 max-w-xl">
+        <div class="bg-white border border-white rounded-2xl p-4 shadow-soft">
+          <div class="text-2xl font-black navy">20+</div>
+          <div class="text-xs text-slate-500 font-semibold">мероприятий</div>
+        </div>
+        <div class="bg-white border border-white rounded-2xl p-4 shadow-soft">
+          <div class="text-2xl font-black navy">5</div>
+          <div class="text-xs text-slate-500 font-semibold">направлений</div>
+        </div>
+        <div class="bg-white border border-white rounded-2xl p-4 shadow-soft">
+          <div class="text-2xl font-black navy">30–90</div>
+          <div class="text-xs text-slate-500 font-semibold">минут</div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -inset-6 bg-indigo-200/40 blur-3xl rounded-full"></div>
+      <div class="relative bg-white p-3 rounded-[2rem] shadow-soft">
+        <img src="images/hero.jpg" class="w-full h-[360px] md:h-[480px] object-cover rounded-[1.5rem]" alt="Онлайн-встреча команды">
+      </div>
+    </div>
   </div>
 </section>
 <section id="crisis-program" class="py-16 md:py-24 bg-[#f3f7ff] border-t border-slate-200">
   <div class="max-w-7xl mx-auto px-5">
-
     <div class="text-center max-w-4xl mx-auto mb-12">
       <div class="inline-flex items-center gap-2 bg-white border border-indigo-100 text-indigo-700 text-sm font-bold px-5 py-2 rounded-full mb-6 shadow-soft">
         ⭐ Флагманская программа TeamWellness
       </div>
-
       <h2 class="text-3xl md:text-5xl font-black navy mb-5">
         Антикризисная программа для удалённых команд
       </h2>
-
       <p class="text-xl md:text-2xl text-slate-700 font-semibold mb-4">
         Снижаем выгорание, удерживаем сотрудников и повышаем устойчивость команды за 4 недели.
       </p>
-
       <p class="text-slate-500 text-lg max-w-3xl mx-auto">
         Для компаний, которые замечают признаки перегрузки, снижения вовлечённости, конфликтов, слабой адаптации новичков или эмоционального выгорания в команде.
       </p>
-
       <a href="#callback" class="inline-flex mt-8 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-indigo-600/20">
         Получить план антикризисной программы
       </a>
     </div>
-
     <div class="grid lg:grid-cols-3 gap-6">
-
-      <div class="bg-white rounded-3xl border border-slate-200 p-7 shadow-soft">
-        <h3 class="text-xl font-black navy mb-6">
-          Что происходит сейчас в команде
-        </h3>
-
+      <div class="card bg-white rounded-3xl border border-slate-200 p-7 shadow-soft">
+        <h3 class="text-xl font-black navy mb-6">Что происходит сейчас в команде</h3>
         <div class="space-y-5">
           <div class="flex gap-4">
             <div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-2xl shrink-0">🔥</div>
@@ -80,7 +123,6 @@
               <p class="text-sm text-slate-600">Ключевые специалисты работают на пределе и начинают искать новое место.</p>
             </div>
           </div>
-
           <div class="flex gap-4">
             <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center text-2xl shrink-0">⚠️</div>
             <div>
@@ -88,7 +130,6 @@
               <p class="text-sm text-slate-600">Команда делает задачи, но энергия, инициатива и интерес постепенно исчезают.</p>
             </div>
           </div>
-
           <div class="flex gap-4">
             <div class="w-12 h-12 bg-violet-100 text-violet-600 rounded-2xl flex items-center justify-center text-2xl shrink-0">💬</div>
             <div>
@@ -96,7 +137,6 @@
               <p class="text-sm text-slate-600">Коммуникация становится тяжелее, растёт раздражение и недоверие.</p>
             </div>
           </div>
-
           <div class="flex gap-4">
             <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-2xl shrink-0">🧩</div>
             <div>
@@ -106,12 +146,8 @@
           </div>
         </div>
       </div>
-
-      <div class="bg-white rounded-3xl border border-slate-200 p-7 shadow-soft">
-        <h3 class="text-xl font-black navy mb-6">
-          Что входит в программу
-        </h3>
-
+      <div class="card bg-white rounded-3xl border border-slate-200 p-7 shadow-soft">
+        <h3 class="text-xl font-black navy mb-6">Что входит в программу</h3>
         <div class="space-y-5">
           <div class="flex gap-4">
             <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl shrink-0">🧠</div>
@@ -120,7 +156,6 @@
               <p class="text-sm text-slate-600">Выявляем риски выгорания, уровень стресса и точки напряжения.</p>
             </div>
           </div>
-
           <div class="flex gap-4">
             <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl shrink-0">👥</div>
             <div>
@@ -128,7 +163,6 @@
               <p class="text-sm text-slate-600">Работаем со стрессом, тревогой, восстановлением энергии и коммуникацией.</p>
             </div>
           </div>
-
           <div class="flex gap-4">
             <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl shrink-0">💬</div>
             <div>
@@ -136,7 +170,6 @@
               <p class="text-sm text-slate-600">Собираем реальные запросы команды без давления и риска для участников.</p>
             </div>
           </div>
-
           <div class="flex gap-4">
             <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl shrink-0">🛡️</div>
             <div>
@@ -144,7 +177,6 @@
               <p class="text-sm text-slate-600">Помогаем лидерам поддерживать команду и управлять состоянием в кризисе.</p>
             </div>
           </div>
-
           <div class="flex gap-4">
             <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl shrink-0">🌱</div>
             <div>
@@ -154,238 +186,218 @@
           </div>
         </div>
       </div>
-
-      <div class="bg-white rounded-3xl border border-slate-200 p-7 shadow-soft">
-        <h3 class="text-xl font-black navy mb-6">
-          Результат через 4 недели
-        </h3>
-
+      <div class="card bg-white rounded-3xl border border-slate-200 p-7 shadow-soft">
+        <h3 class="text-xl font-black navy mb-6">Результат через 4 недели</h3>
         <ul class="space-y-5 text-slate-700">
-          <li class="flex gap-3">
-            <span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span>
-            <span>Снижение эмоционального напряжения в команде</span>
-          </li>
-
-          <li class="flex gap-3">
-            <span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span>
-            <span>Более открытая и спокойная коммуникация</span>
-          </li>
-
-          <li class="flex gap-3">
-            <span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span>
-            <span>Раннее выявление рисков выгорания и увольнений</span>
-          </li>
-
-          <li class="flex gap-3">
-            <span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span>
-            <span>Повышение вовлечённости и энергии сотрудников</span>
-          </li>
-
-          <li class="flex gap-3">
-            <span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span>
-            <span>Более мягкая адаптация новых сотрудников</span>
-          </li>
-
-          <li class="flex gap-3">
-            <span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span>
-            <span>Итоговые рекомендации для HR и руководителей</span>
-          </li>
+          <li class="flex gap-3"><span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span><span>Снижение эмоционального напряжения в команде</span></li>
+          <li class="flex gap-3"><span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span><span>Более открытая и спокойная коммуникация</span></li>
+          <li class="flex gap-3"><span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span><span>Раннее выявление рисков выгорания и увольнений</span></li>
+          <li class="flex gap-3"><span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span><span>Повышение вовлечённости и энергии сотрудников</span></li>
+          <li class="flex gap-3"><span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span><span>Более мягкая адаптация новых сотрудников</span></li>
+          <li class="flex gap-3"><span class="w-7 h-7 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">✓</span><span>Итоговые рекомендации для HR и руководителей</span></li>
         </ul>
-
         <div class="mt-8 bg-indigo-50 border border-indigo-100 rounded-2xl p-5">
-          <p class="text-indigo-700 font-bold">
-            Вы защищаете не только сотрудников, но и результаты бизнеса.
-          </p>
+          <p class="text-indigo-700 font-bold">Вы защищаете не только сотрудников, но и результаты бизнеса.</p>
         </div>
       </div>
-
     </div>
-
     <div class="mt-8 bg-white rounded-3xl border border-slate-200 p-6 shadow-soft">
       <div class="grid md:grid-cols-4 gap-5 text-center">
-        <div>
-          <div class="text-3xl mb-2">💻</div>
-          <p class="font-bold navy">IT-команды и продуктовые компании</p>
-        </div>
-
-        <div>
-          <div class="text-3xl mb-2">🚀</div>
-          <p class="font-bold navy">Стартапы и быстро растущие команды</p>
-        </div>
-
-        <div>
-          <div class="text-3xl mb-2">🌍</div>
-          <p class="font-bold navy">Полностью удалённые и распределённые команды</p>
-        </div>
-
-        <div>
-          <div class="text-3xl mb-2">👥</div>
-          <p class="font-bold navy">Команды от 10 до 500 сотрудников</p>
-        </div>
+        <div><div class="text-3xl mb-2">💻</div><p class="font-bold navy">IT-команды и продуктовые компании</p></div>
+        <div><div class="text-3xl mb-2">🚀</div><p class="font-bold navy">Стартапы и быстро растущие команды</p></div>
+        <div><div class="text-3xl mb-2">🌍</div><p class="font-bold navy">Полностью удалённые и распределённые команды</p></div>
+        <div><div class="text-3xl mb-2">👥</div><p class="font-bold navy">Команды от 10 до 500 сотрудников</p></div>
       </div>
     </div>
-
   </div>
 </section>
-<section id="problems" class="py-16 md:py-24 bg-white"><div class="max-w-7xl mx-auto px-5"><div class="text-center max-w-3xl mx-auto mb-12"><h2 class="text-3xl md:text-5xl font-black navy mb-4">С какими вызовами сталкивается бизнес?</h2><p class="text-slate-500 text-lg">Скрытые ментальные кризисы в штате ежедневно влияют на продуктивность, коммуникацию и удержание сотрудников.</p></div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-3xl mb-5">🔥</div><h3 class="font-black text-xl navy mb-3">Выгорание</h3><p class="text-slate-600">Хронический стресс снижает вовлечённость, увеличивает ошибки и приводит к потере сильных сотрудников.</p></div>
-<div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-5">📉</div><h3 class="font-black text-xl navy mb-3">Падение продуктивности</h3><p class="text-slate-600">Тревога, усталость и напряжение мешают сотрудникам сохранять концентрацию и принимать точные решения.</p></div>
-<div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-violet-100 text-violet-600 rounded-2xl flex items-center justify-center text-3xl mb-5">💬</div><h3 class="font-black text-xl navy mb-3">Конфликты в командах</h3><p class="text-slate-600">Нарушенные коммуникации усиливают напряжение, пассивную агрессию и снижают качество командной работы.</p></div>
-<div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-3xl mb-5">🔄</div><h3 class="font-black text-xl navy mb-3">Усталость после изменений</h3><p class="text-slate-600">Перестройки, слияния и новые процессы повышают тревожность и сопротивление внутри команд.</p></div>
-<div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-5">⚡</div><h3 class="font-black text-xl navy mb-3">Стресс руководителей</h3><p class="text-slate-600">Лидеры тоже переживают перегрузку, что напрямую влияет на решения, атмосферу и темп команды.</p></div>
-<div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-5">🧭</div><h3 class="font-black text-xl navy mb-3">Потеря мотивации</h3><p class="text-slate-600">Сотрудники теряют интерес к задачам, не видят смысла в работе и постепенно отдаляются от команды.</p></div>
-</div></div></section>
-<section id="programs" class="py-16 md:py-24 bg-[#f3f7ff]"><div class="max-w-7xl mx-auto px-5"><div class="text-center max-w-3xl mx-auto mb-12"><h2 class="text-3xl md:text-5xl font-black navy mb-4">Программы поддержки</h2><p class="text-slate-500 text-lg">Комплексная модель благополучия: социальное, психическое, эмоциональное, финансовое и физическое здоровье.</p></div><div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-<article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/social.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-4">🤝</div><h3 class="font-black text-xl navy mb-3">Социальное здоровье</h3><p class="text-sm text-slate-600 mb-5">Лучше всего подходит для сплочения команды, обучения и развития эмоционального интеллекта.</p><a href="#social-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
-<article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/mental.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center mb-4">🧘</div><h3 class="font-black text-xl navy mb-3">Психическое здоровье</h3><p class="text-sm text-slate-600 mb-5">Снижаем уровень стресса и поддерживаем команды в период изменений.</p><a href="#mental-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
-<article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/emotional.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center mb-4">♡</div><h3 class="font-black text-xl navy mb-3">Эмоциональное здоровье</h3><p class="text-sm text-slate-600 mb-5">Помогаем управлять эмоциями и сохранять внутренний баланс.</p><a href="#emotional-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
-<article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/financial.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">💼</div><h3 class="font-black text-xl navy mb-3">Финансовое здоровье</h3><p class="text-sm text-slate-600 mb-5">Формируем спокойное отношение к деньгам и снижаем финансовую тревогу.</p><a href="#financial-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
-<article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/physical.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-lime-100 text-lime-700 rounded-xl flex items-center justify-center mb-4">🌿</div><h3 class="font-black text-xl navy mb-3">Физическое здоровье</h3><p class="text-sm text-slate-600 mb-5">Заботимся о теле: энергия, движение, дыхание и рабочие привычки.</p><a href="#physical-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
-</div></div></section>
-<section class="py-16 md:py-24 bg-white"><div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-10 items-start"><div class="sticky top-28 hidden lg:block"><h2 class="text-3xl md:text-5xl font-black navy mb-5">Комплексная модель благополучия</h2><p class="text-slate-500 text-lg mb-8">Все направления можно проводить отдельно или собрать в последовательную программу для команды.</p><img src="images/hero.jpg" class="rounded-[2rem] shadow-soft w-full h-[420px] object-cover"></div><div class="space-y-6">
-<div id="social-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-3">Социальное здоровье</h3><p class="italic text-slate-500 mb-4">Лучше всего подходит для: сплочения команды, обучения и расширения возможностей, развития эмоционального интеллекта.</p><p class="text-slate-600 leading-relaxed">Эта программа по укреплению социального благополучия сотрудников — мощный виртуальный опыт, который помогает создать сплоченную корпоративную культуру, вдохновляя на содержательные беседы. Команда узнает друг друга на более личном уровне, одновременно учась вести более эффективные беседы, повышая свои коммуникативные навыки и формируя прочные, подлинные отношения, в которых люди чувствуют, что их видят, слышат и ценят. Таким образом, это отчасти обучение, отчасти интерактивное сплочение команды. Это 90-минутная программа по укреплению социального благополучия.</p></div>
-<div id="mental-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-5">Психическое здоровье</h3><div class="space-y-5"><div><h4 class="font-black text-lg navy">Снижение уровня стресса у сотрудников для повышения производительности труда</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: напряженных сезонов, команд, испытывающих стресс, стресса у сотрудников, проблем с выгоранием, стресса у персонала, психического здоровья.</p></div><div><h4 class="font-black text-lg navy">Преодоление перемен и неопределенности</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: слияний, поглощений, периодов организационных изменений.</p></div><div><h4 class="font-black text-lg navy">Программа обучения в области психического здоровья</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: повышения уровня вашей команды, укрепления командного духа, проведения общих мероприятий.</p></div><div><h4 class="font-black text-lg navy">Управляемое медитативное рисование каракулей</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: укрепления командных связей, снятия стресса, предотвращения выгорания, улучшения психического здоровья, снижения стресса у сотрудников, работы в стрессовых ситуациях, стресса у работников.</p></div><div><h4 class="font-black text-lg navy">Управляемая звуковая медитация для команд, испытывающих стресс</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: снятия стресса, расслабления, полностью удаленных команд, психического здоровья, стресса у сотрудников, стресса в командах, стресса у работников.</p></div></div></div>
-<div id="emotional-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-5">Эмоциональное здоровье</h3><div class="space-y-5"><div><h4 class="font-black text-lg navy">Эмоциональное здоровье на рабочем месте</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: периодов организационных изменений, обучающих обедов, поддержания эмоционального благополучия.</p></div><div><h4 class="font-black text-lg navy">Эмоциональное благополучие и благодарность сотрудников</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: выражения признательности сотрудникам, укрепления командных связей, проведения специальных мероприятий, повышения эмоционального благополучия.</p></div><div><h4 class="font-black text-lg navy">Как справиться с горем и сильными эмоциями</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: снятия стресса, перемен, периодов неопределенности, эмоционального благополучия.</p></div></div></div>
-<div id="financial-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-3">Финансовое здоровье</h3><p class="italic text-slate-500 mb-4">Идеально подходит для: налогового сезона, обучающих обедов, финансового благополучия.</p><p class="text-slate-600 leading-relaxed">Эта программа по финансовому благополучию призвана предоставить участникам инструменты для достижения успеха и знания, необходимые для принятия взвешенных финансовых решений в профессиональной и личной жизни. Темы программы посвящены выявлению финансовых убеждений и инвестиционных стратегий, которые помогут вам достичь максимально возможного финансового благополучия.</p></div>
-<div id="physical-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-5">Физическое здоровье</h3><div class="space-y-5"><div><h4 class="font-black text-lg navy">Йога на стуле</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: напряженного периода, снятия стресса, выгорания, улучшения психического здоровья, упражнений за рабочим столом, офисных тренировок.</p></div><div><h4 class="font-black text-lg navy">Корпоративное питание на рабочем месте</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: напряженного сезона, поддержания здорового питания, обучающих обедов, питания на рабочем месте, корпоративного питания.</p></div><div><h4 class="font-black text-lg navy">Упражнения за столом</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: снятия стресса, борьбы с хандрой в понедельник, поддержания физического здоровья, упражнений за рабочим столом, офисных тренировок.</p></div><div><h4 class="font-black text-lg navy">Самомассаж под руководством инструктора</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: борьбы с выгоранием, снятия стресса, повышения командного духа, улучшения физического здоровья, снижения стресса на рабочем месте.</p></div><div><h4 class="font-black text-lg navy">Основы дыхания</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: сплочения команды, снятия стресса, обучающих обедов, поддержания физического здоровья, упражнений за рабочим столом, офисных тренировок.</p></div></div></div>
-</div></div></section>
-<section id="process" class="py-16 md:py-24 bg-[#f3f7ff]"><div class="max-w-7xl mx-auto px-5"><div class="text-center max-w-3xl mx-auto mb-14"><h2 class="text-3xl md:text-5xl font-black navy mb-4">Как проходит программа</h2><p class="text-slate-500 text-lg">Простой и понятный формат работы с HR и руководителями.</p></div><div class="grid md:grid-cols-5 gap-5"><div class="bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">1</div><h3 class="font-black navy mb-2">Знакомство с задачей HR</h3><p class="text-sm text-slate-500">Определяем цели, проблемы и потребности команды.</p></div><div class="bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">2</div><h3 class="font-black navy mb-2">Подбор программы</h3><p class="text-sm text-slate-500">Предлагаем решение и согласуем формат.</p></div><div class="bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">3</div><h3 class="font-black navy mb-2">Проведение мероприятия</h3><p class="text-sm text-slate-500">Психологи проводят сессию онлайн.</p></div><div class="bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">4</div><h3 class="font-black navy mb-2">Обратная связь</h3><p class="text-sm text-slate-500">Собираем отклики участников и анализируем эффект.</p></div><div class="bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">5</div><h3 class="font-black navy mb-2">Повторные активности</h3><p class="text-sm text-slate-500">Поддерживаем результат и усиливаем изменения.</p></div></div></div></section>
-<section id="team" class="py-16 md:py-24 bg-white"><div class="max-w-7xl mx-auto px-5"><div class="text-center max-w-3xl mx-auto mb-12"><h2 class="text-3xl md:text-5xl font-black navy mb-4">Команда практикующих экспертов</h2><p class="text-slate-500 text-lg">Специалисты проекта работают с индивидуальными и групповыми форматами поддержки сотрудников.</p></div><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Оксана Романовская</h4><p class="text-sm text-slate-600">Психолог, экзистенциальный терапевт</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Олеарник Мария</h4><p class="text-sm text-slate-600">Психолог, игропрактик</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Диана Комарчук</h4><p class="text-sm text-slate-600">Психолог, аналитический юнгианский психолог</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Алёна Астровко</h4><p class="text-sm text-slate-600">Психолог, экзистенциальный психолог</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Буцовская Татьяна</h4><p class="text-sm text-slate-600">Психолог, гештальт-терапевт и травматерапевт</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Ольга Скарбан</h4><p class="text-sm text-slate-600">Психолог, гештальт-подход</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Ровина Катя</h4><p class="text-sm text-slate-600">Психолог, гештальт-подход</p></div>
-</div></div></section>
-<section id="tariffs" class="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
-  <div class="max-w-6xl mx-auto px-4">
-
-    <div class="text-center max-w-3xl mx-auto mb-16">
-      <h2 class="text-3xl font-bold text-slate-900 mb-4">
-        Форматы сотрудничества
-      </h2>
-      <p class="text-slate-500">
-        Подбираем формат поддержки под задачи команды, уровень нагрузки и текущие вызовы бизнеса.
-      </p>
+<section id="problems" class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-3xl md:text-5xl font-black navy mb-4">С какими вызовами сталкивается бизнес?</h2>
+      <p class="text-slate-500 text-lg">Скрытые ментальные кризисы в штате ежедневно влияют на продуктивность, коммуникацию и удержание сотрудников.</p>
     </div>
-
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-3xl mb-5">🔥</div><h3 class="font-black text-xl navy mb-3">Выгорание</h3><p class="text-slate-600">Хронический стресс снижает вовлечённость, увеличивает ошибки и приводит к потере сильных сотрудников.</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-5">📉</div><h3 class="font-black text-xl navy mb-3">Падение продуктивности</h3><p class="text-slate-600">Тревога, усталость и напряжение мешают сотрудникам сохранять концентрацию и принимать точные решения.</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-violet-100 text-violet-600 rounded-2xl flex items-center justify-center text-3xl mb-5">💬</div><h3 class="font-black text-xl navy mb-3">Конфликты в командах</h3><p class="text-slate-600">Нарушенные коммуникации усиливают напряжение, пассивную агрессию и снижают качество командной работы.</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-3xl mb-5">🔄</div><h3 class="font-black text-xl navy mb-3">Усталость после изменений</h3><p class="text-slate-600">Перестройки, слияния и новые процессы повышают тревожность и сопротивление внутри команд.</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-5">⚡</div><h3 class="font-black text-xl navy mb-3">Стресс руководителей</h3><p class="text-slate-600">Лидеры тоже переживают перегрузку, что напрямую влияет на решения, атмосферу и темп команды.</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-5">🧭</div><h3 class="font-black text-xl navy mb-3">Потеря мотивации</h3><p class="text-slate-600">Сотрудники теряют интерес к задачам, не видят смысла в работе и постепенно отдаляются от команды.</p></div>
+    </div>
+  </div>
+</section>
+<section id="programs" class="py-16 md:py-24 bg-[#f3f7ff]">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-3xl md:text-5xl font-black navy mb-4">Программы поддержки</h2>
+      <p class="text-slate-500 text-lg">Комплексная модель благополучия: социальное, психическое, эмоциональное, финансовое и физическое здоровье.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+      <article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/social.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-4">🤝</div><h3 class="font-black text-xl navy mb-3">Социальное здоровье</h3><p class="text-sm text-slate-600 mb-5">Лучше всего подходит для сплочения команды, обучения и развития эмоционального интеллекта.</p><a href="#social-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
+      <article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/mental.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center mb-4">🧘</div><h3 class="font-black text-xl navy mb-3">Психическое здоровье</h3><p class="text-sm text-slate-600 mb-5">Снижаем уровень стресса и поддерживаем команды в период изменений.</p><a href="#mental-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
+      <article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/emotional.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center mb-4">♡</div><h3 class="font-black text-xl navy mb-3">Эмоциональное здоровье</h3><p class="text-sm text-slate-600 mb-5">Помогаем управлять эмоциями и сохранять внутренний баланс.</p><a href="#emotional-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
+      <article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/financial.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">💼</div><h3 class="font-black text-xl navy mb-3">Финансовое здоровье</h3><p class="text-sm text-slate-600 mb-5">Формируем спокойное отношение к деньгам и снижаем финансовую тревогу.</p><a href="#financial-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
+      <article class="card bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-soft"><img src="images/physical.jpg" class="w-full h-44 object-cover"><div class="p-6"><div class="w-10 h-10 bg-lime-100 text-lime-700 rounded-xl flex items-center justify-center mb-4">🌿</div><h3 class="font-black text-xl navy mb-3">Физическое здоровье</h3><p class="text-sm text-slate-600 mb-5">Заботимся о теле: энергия, движение, дыхание и рабочие привычки.</p><a href="#physical-detail" class="text-indigo-600 font-bold text-sm">Подробнее →</a></div></article>
+    </div>
+  </div>
+</section>
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-10 items-start">
+    <div class="sticky top-28 hidden lg:block">
+      <h2 class="text-3xl md:text-5xl font-black navy mb-5">Комплексная модель благополучия</h2>
+      <p class="text-slate-500 text-lg mb-8">Все направления можно проводить отдельно или собрать в последовательную программу для команды.</p>
+      <img src="images/hero.jpg" class="rounded-[2rem] shadow-soft w-full h-[420px] object-cover">
+    </div>
+    <div class="space-y-6">
+      <div id="social-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-3">Социальное здоровье</h3><p class="italic text-slate-500 mb-4">Лучше всего подходит для: сплочения команды, обучения и расширения возможностей, развития эмоционального интеллекта.</p><p class="text-slate-600 leading-relaxed">Эта программа по укреплению социального благополучия сотрудников — мощный виртуальный опыт, который помогает создать сплоченную корпоративную культуру, вдохновляя на содержательные беседы. Команда узнает друг друга на более личном уровне, одновременно учась вести более эффективные беседы, повышая свои коммуникативные навыки и формируя прочные, подлинные отношения, в которых люди чувствуют, что их видят, слышат и ценят. Таким образом, это отчасти обучение, отчасти интерактивное сплочение команды. Это 90-минутная программа по укреплению социального благополучия.</p></div>
+      <div id="mental-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-5">Психическое здоровье</h3><div class="space-y-5"><div><h4 class="font-black text-lg navy">Снижение уровня стресса у сотрудников для повышения производительности труда</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: напряженных сезонов, команд, испытывающих стресс, стресса у сотрудников, проблем с выгоранием, стресса у персонала, психического здоровья.</p></div><div><h4 class="font-black text-lg navy">Преодоление перемен и неопределенности</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: слияний, поглощений, периодов организационных изменений.</p></div><div><h4 class="font-black text-lg navy">Программа обучения в области психического здоровья</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: повышения уровня вашей команды, укрепления командного духа, проведения общих мероприятий.</p></div><div><h4 class="font-black text-lg navy">Управляемое медитативное рисование каракулей</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: укрепления командных связей, снятия стресса, предотвращения выгорания, улучшения психического здоровья, снижения стресса у сотрудников, работы в стрессовых ситуациях, стресса у работников.</p></div><div><h4 class="font-black text-lg navy">Управляемая звуковая медитация для команд, испытывающих стресс</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: снятия стресса, расслабления, полностью удаленных команд, психического здоровья, стресса у сотрудников, стресса в командах, стресса у работников.</p></div></div></div>
+      <div id="emotional-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-5">Эмоциональное здоровье</h3><div class="space-y-5"><div><h4 class="font-black text-lg navy">Эмоциональное здоровье на рабочем месте</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: периодов организационных изменений, обучающих обедов, поддержания эмоционального благополучия.</p></div><div><h4 class="font-black text-lg navy">Эмоциональное благополучие и благодарность сотрудников</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: выражения признательности сотрудникам, укрепления командных связей, проведения специальных мероприятий, повышения эмоционального благополучия.</p></div><div><h4 class="font-black text-lg navy">Как справиться с горем и сильными эмоциями</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: снятия стресса, перемен, периодов неопределенности, эмоционального благополучия.</p></div></div></div>
+      <div id="financial-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-3">Финансовое здоровье</h3><p class="italic text-slate-500 mb-4">Идеально подходит для: налогового сезона, обучающих обедов, финансового благополучия.</p><p class="text-slate-600 leading-relaxed">Эта программа по финансовому благополучию призвана предоставить участникам инструменты для достижения успеха и знания, необходимые для принятия взвешенных финансовых решений в профессиональной и личной жизни. Темы программы посвящены выявлению финансовых убеждений и инвестиционных стратегий, которые помогут вам достичь максимально возможного финансового благополучия.</p></div>
+      <div id="physical-detail" class="bg-slate-50 border border-slate-200 rounded-3xl p-7"><h3 class="text-2xl font-black navy mb-5">Физическое здоровье</h3><div class="space-y-5"><div><h4 class="font-black text-lg navy">Йога на стуле</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: напряженного периода, снятия стресса, выгорания, улучшения психического здоровья, упражнений за рабочим столом, офисных тренировок.</p></div><div><h4 class="font-black text-lg navy">Корпоративное питание на рабочем месте</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: напряженного сезона, поддержания здорового питания, обучающих обедов, питания на рабочем месте, корпоративного питания.</p></div><div><h4 class="font-black text-lg navy">Упражнения за столом</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: снятия стресса, борьбы с хандрой в понедельник, поддержания физического здоровья, упражнений за рабочим столом, офисных тренировок.</p></div><div><h4 class="font-black text-lg navy">Самомассаж под руководством инструктора</h4><p class="text-slate-600 text-sm mt-2">Лучше всего подходит для: борьбы с выгоранием, снятия стресса, повышения командного духа, улучшения физического здоровья, снижения стресса на рабочем месте.</p></div><div><h4 class="font-black text-lg navy">Основы дыхания</h4><p class="text-slate-600 text-sm mt-2">Идеально подходит для: сплочения команды, снятия стресса, обучающих обедов, поддержания физического здоровья, упражнений за рабочим столом, офисных тренировок.</p></div></div></div>
+    </div>
+  </div>
+</section>
+<section id="process" class="py-16 md:py-24 bg-[#f3f7ff]">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <h2 class="text-3xl md:text-5xl font-black navy mb-4">Как проходит программа</h2>
+      <p class="text-slate-500 text-lg">Простой и понятный формат работы с HR и руководителями.</p>
+    </div>
+    <div class="grid md:grid-cols-5 gap-5">
+      <div class="card bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">1</div><h3 class="font-black navy mb-2">Знакомство с задачей HR</h3><p class="text-sm text-slate-500">Определяем цели, проблемы и потребности команды.</p></div>
+      <div class="card bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">2</div><h3 class="font-black navy mb-2">Подбор программы</h3><p class="text-sm text-slate-500">Предлагаем решение и согласуем формат.</p></div>
+      <div class="card bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">3</div><h3 class="font-black navy mb-2">Проведение мероприятия</h3><p class="text-sm text-slate-500">Психологи проводят сессию онлайн.</p></div>
+      <div class="card bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">4</div><h3 class="font-black navy mb-2">Обратная связь</h3><p class="text-sm text-slate-500">Собираем отклики участников и анализируем эффект.</p></div>
+      <div class="card bg-white rounded-3xl border border-slate-200 p-6 text-center shadow-soft"><div class="mx-auto w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-black mb-4">5</div><h3 class="font-black navy mb-2">Повторные активности</h3><p class="text-sm text-slate-500">Поддерживаем результат и усиливаем изменения.</p></div>
+    </div>
+  </div>
+</section>
+<section id="team" class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-3xl md:text-5xl font-black navy mb-4">Команда практикующих экспертов</h2>
+      <p class="text-slate-500 text-lg">Специалисты проекта работают с индивидуальными и групповыми форматами поддержки сотрудников.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Оксана Романовская</h4><p class="text-sm text-slate-600">Психолог, экзистенциальный терапевт</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Олеарник Мария</h4><p class="text-sm text-slate-600">Психолог, игропрактик</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Диана Комарчук</h4><p class="text-sm text-slate-600">Психолог, аналитический юнгианский психолог</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Алёна Астровко</h4><p class="text-sm text-slate-600">Психолог, экзистенциальный психолог</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Буцовская Татьяна</h4><p class="text-sm text-slate-600">Психолог, гештальт-терапевт и травматерапевт</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Ольга Скарбан</h4><p class="text-sm text-slate-600">Психолог, гештальт-подход</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-6"><div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-4">👤</div><h4 class="font-black text-xl navy mb-2">Ровина Катя</h4><p class="text-sm text-slate-600">Психолог, гештальт-подход</p></div>
+    </div>
+  </div>
+</section>
+<section id="tariffs" class="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-5xl font-black navy mb-4">Форматы сотрудничества</h2>
+      <p class="text-slate-500 text-lg">Подбираем формат поддержки под задачи команды, уровень нагрузки и текущие вызовы бизнеса.</p>
+    </div>
     <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
-
-<div class="bg-[#0b1647] text-white p-8 rounded-2xl border-2 border-indigo-500 shadow-xl relative">
-
-  <div class="absolute -top-3 left-6 bg-indigo-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full">
-    Флагманская программа
-  </div>
-
-  <div class="text-indigo-300 font-bold uppercase text-xs mb-4">
-    Антикризисное решение
-  </div>
-
-  <h3 class="text-2xl font-bold mb-4">
-    Антикризисная программа на 4 недели
-  </h3>
-
-  <p class="text-indigo-100 mb-6">
-    Для удалённых команд, где уже появились признаки выгорания, падения вовлечённости, конфликтов, текучести или сложностей с адаптацией новых сотрудников.
-  </p>
-
-  <ul class="space-y-3 text-sm text-indigo-100 mb-8">
-    <li>✓ Диагностика состояния команды</li>
-    <li>✓ 4 групповые онлайн-встречи</li>
-    <li>✓ Работа со стрессом и выгоранием</li>
-    <li>✓ Поддержка руководителей и HR</li>
-    <li>✓ Адаптация новых сотрудников</li>
-    <li>✓ Итоговые рекомендации для компании</li>
-  </ul>
-
-  <a href="#callback" class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-xl font-medium">
-    Получить предложение
-  </a>
-
-</div>
-      
-      <div class="bg-white p-8 rounded-2xl border shadow-sm">
-        <div class="text-indigo-600 font-bold uppercase text-xs mb-4">
-          Старт
-        </div>
-
-        <h3 class="text-2xl font-bold mb-4">
-          Разовая встреча
-        </h3>
-
-        <p class="text-slate-600 mb-6">
-          Подходит для решения конкретного запроса: выгорание, стресс, напряжение в коллективе, снижение мотивации или организационные изменения.
-        </p>
-
+      <div class="card tariff-card bg-[#0b1647] text-white p-8 rounded-3xl border-2 border-indigo-500 shadow-xl relative overflow-hidden">
+        <div class="absolute -top-3 left-6 bg-indigo-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full">Флагманская программа</div>
+        <div class="text-indigo-300 font-bold uppercase text-xs mb-4">Антикризисное решение</div>
+        <h3 class="text-2xl font-black mb-4">Антикризисная программа на 4 недели</h3>
+        <p class="text-indigo-100 mb-6">Для удалённых команд, где уже появились признаки выгорания, падения вовлечённости, конфликтов, текучести или сложностей с адаптацией новых сотрудников.</p>
+        <ul class="space-y-3 text-sm text-indigo-100 mb-8">
+          <li>✓ Диагностика состояния команды</li>
+          <li>✓ 4 групповые онлайн-встречи</li>
+          <li>✓ Работа со стрессом и выгоранием</li>
+          <li>✓ Поддержка руководителей и HR</li>
+          <li>✓ Адаптация новых сотрудников</li>
+          <li>✓ Итоговые рекомендации для компании</li>
+        </ul>
+        <a href="#callback" class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-xl font-bold">Получить предложение</a>
+      </div>
+      <div class="card tariff-card bg-white p-8 rounded-3xl border border-slate-200 shadow-soft">
+        <div class="text-indigo-600 font-bold uppercase text-xs mb-4">Старт</div>
+        <h3 class="text-2xl font-black navy mb-4">Разовая встреча</h3>
+        <p class="text-slate-600 mb-6">Подходит для решения конкретного запроса: выгорание, стресс, напряжение в коллективе, снижение мотивации или организационные изменения.</p>
         <ul class="space-y-3 text-sm text-slate-600 mb-8">
           <li>✓ Онлайн-встреча 90 минут</li>
           <li>✓ Практические инструменты</li>
           <li>✓ Вопросы от команды</li>
         </ul>
-
-        <a href="#callback" class="block text-center bg-slate-100 py-3 rounded-xl font-medium">
-          Получить предложение
-        </a>
+        <a href="#callback" class="block text-center bg-slate-100 hover:bg-slate-200 py-3 rounded-xl font-bold">Получить предложение</a>
       </div>
-
-      <div class="bg-white p-8 rounded-2xl border-2 border-indigo-600 shadow-md relative">
-
-        <div class="absolute -top-3 left-6 bg-indigo-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full">
-          Популярный формат
-        </div>
-
-        <div class="text-indigo-600 font-bold uppercase text-xs mb-4">
-          Поддержка команды
-        </div>
-
-        <h3 class="text-2xl font-bold mb-4">
-          Программа на 1 месяц
-        </h3>
-
-        <p class="text-slate-600 mb-6">
-          Регулярная поддержка сотрудников с постепенным улучшением атмосферы внутри команды.
-        </p>
-
+      <div class="card tariff-card bg-white p-8 rounded-3xl border-2 border-indigo-600 shadow-xl relative">
+        <div class="absolute -top-3 left-6 bg-indigo-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full">Популярный формат</div>
+        <div class="text-indigo-600 font-bold uppercase text-xs mb-4">Поддержка команды</div>
+        <h3 class="text-2xl font-black navy mb-4">Программа на 1 месяц</h3>
+        <p class="text-slate-600 mb-6">Регулярная поддержка сотрудников с постепенным улучшением атмосферы внутри команды.</p>
         <ul class="space-y-3 text-sm text-slate-600 mb-8">
           <li>✓ 4 встречи в течение месяца</li>
           <li>✓ Темы под задачи бизнеса</li>
           <li>✓ Практические упражнения</li>
           <li>✓ Поддержка HR и руководителей</li>
         </ul>
-
-        <a href="#callback" class="block text-center bg-indigo-600 text-white py-3 rounded-xl font-medium">
-          Получить предложение
-        </a>
+        <a href="#callback" class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-xl font-bold">Получить предложение</a>
       </div>
-
-      <div class="bg-white p-8 rounded-2xl border shadow-sm">
-
-        <div class="text-indigo-600 font-bold uppercase text-xs mb-4">
-          Системная работа
-        </div>
-
-        <h3 class="text-2xl font-bold mb-4">
-          Программа на 3 месяца
-        </h3>
-
-        <p class="text-slate-600 mb-6">
-          Для команд, которые проходят через масштабирование, изменения или хотят выстроить устойчивую культуру благополучия сотрудников.
-        </p>
-
+      <div class="card tariff-card bg-white p-8 rounded-3xl border border-slate-200 shadow-soft">
+        <div class="text-indigo-600 font-bold uppercase text-xs mb-4">Системная работа</div>
+        <h3 class="text-2xl font-black navy mb-4">Программа на 3 месяца</h3>
+        <p class="text-slate-600 mb-6">Для команд, которые проходят через масштабирование, изменения или хотят выстроить устойчивую культуру благополучия сотрудников.</p>
         <ul class="space-y-3 text-sm text-slate-600 mb-8">
           <li>✓ До 12 встреч</li>
           <li>✓ Индивидуальная настройка программы</li>
           <li>✓ Поддержка руководителей</li>
           <li>✓ Долгосрочный эффект для команды</li>
         </ul>
-
-        <a href="#callback" class="block text-center bg-slate-100 py-3 rounded-xl font-medium">
-          Получить предложение
-        </a>
+        <a href="#callback" class="block text-center bg-slate-100 hover:bg-slate-200 py-3 rounded-xl font-bold">Получить предложение</a>
       </div>
-
     </div>
-
   </div>
-</section><section id="cases" class="py-16 md:py-24 bg-white"><div class="max-w-7xl mx-auto px-5"><div class="text-center max-w-3xl mx-auto mb-14"><h2 class="text-3xl md:text-5xl font-black navy mb-4">Команды в восторге от наших мероприятий</h2><p class="text-slate-500 text-lg">Примеры обратной связи после внедрения программ поддержки.</p></div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Сессия по профилактике выгорания помогла команде признать усталость и начать говорить о нагрузке открыто.</p><b class="navy">Марина Петрова</b><p class="text-xs text-slate-400">HR-директор</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">После программы по коммуникации стало проще обсуждать сложные темы без обвинений.</p><b class="navy">Алексей Смирнов</b><p class="text-xs text-slate-400">Операционный директор</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Сотрудники стали спокойнее реагировать на стрессовые ситуации.</p><b class="navy">Екатерина Волкова</b><p class="text-xs text-slate-400">HR-менеджер</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Финансовый вебинар помог снизить тревогу вокруг денег.</p><b class="navy">Дмитрий Кузнецов</b><p class="text-xs text-slate-400">Финансовый директор</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Йога на стуле оказалась простой и рабочей практикой для офиса.</p><b class="navy">Ирина Лебедева</b><p class="text-xs text-slate-400">Руководитель отдела</p></div><div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Поддержка психологов помогла сохранить ключевых сотрудников.</p><b class="navy">Николай Орлов</b><p class="text-xs text-slate-400">CEO</p></div>
-</div></div></section>
-<section id="callback" class="py-16 md:py-24 bg-navy text-white"><div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center"><div><h2 class="text-3xl md:text-5xl font-black mb-6">Забота о людях — это инвестиция в устойчивость бизнеса</h2><p class="text-indigo-100 text-lg mb-8">Оставьте контакты. Мы свяжемся с вами и предложим формат программы под задачи вашей команды.</p><a href="tel:+79963362868" class="inline-flex items-center gap-3 text-2xl font-black">☎ + 7 996 336 28 68</a></div><form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-8 md:p-10 rounded-[2rem] text-slate-900 space-y-4 shadow-soft"><input type="hidden" name="access_key" value="15714b9b-2d29-49d6-a550-a43ee3048bbb"><input type="hidden" name="subject" value="Новая заявка с сайта TeamWellness"><input type="hidden" name="redirect" value="https://teamwellness.pages.dev/#callback"><input type="text" name="name" required placeholder="Ваше имя" class="w-full border border-slate-200 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" /><input type="email" name="email" required placeholder="Рабочий Email" class="w-full border border-slate-200 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" /><input type="tel" name="phone" required placeholder="+7 (999) 000-00-00" class="w-full border border-slate-200 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" /><textarea name="message" rows="4" placeholder="Кратко опишите запрос вашей команды" class="w-full border border-slate-200 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea><button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-2xl font-black">Отправить заявку</button></form></div></section>
-</main><footer class="bg-[#06102f] text-slate-300 py-10"><div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-6"><div><div class="font-black text-white mb-2">TeamWellness</div><p class="text-sm text-slate-400">Психологическая поддержка бизнеса и команд</p></div><div class="flex flex-col md:items-end gap-2 text-sm"><a href="tel:+79963362868" class="hover:text-white">+ 7 996 3362868</a><span>© TeamWellness</span></div></div></footer>
-</body></html>
+</section>
+<section id="cases" class="py-16 md:py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <h2 class="text-3xl md:text-5xl font-black navy mb-4">Команды в восторге от наших мероприятий</h2>
+      <p class="text-slate-500 text-lg">Примеры обратной связи после внедрения программ поддержки.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Сессия по профилактике выгорания помогла команде признать усталость и начать говорить о нагрузке открыто.</p><b class="navy">Марина Петрова</b><p class="text-xs text-slate-400">HR-директор</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">После программы по коммуникации стало проще обсуждать сложные темы без обвинений.</p><b class="navy">Алексей Смирнов</b><p class="text-xs text-slate-400">Операционный директор</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Сотрудники стали спокойнее реагировать на стрессовые ситуации.</p><b class="navy">Екатерина Волкова</b><p class="text-xs text-slate-400">HR-менеджер</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Финансовый вебинар помог снизить тревогу вокруг денег.</p><b class="navy">Дмитрий Кузнецов</b><p class="text-xs text-slate-400">Финансовый директор</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Йога на стуле оказалась простой и рабочей практикой для офиса.</p><b class="navy">Ирина Лебедева</b><p class="text-xs text-slate-400">Руководитель отдела</p></div>
+      <div class="card bg-slate-50 border border-slate-200 rounded-3xl p-7"><div class="text-indigo-600 text-3xl mb-4">“</div><p class="italic text-slate-600 mb-6">Поддержка психологов помогла сохранить ключевых сотрудников.</p><b class="navy">Николай Орлов</b><p class="text-xs text-slate-400">CEO</p></div>
+    </div>
+  </div>
+</section>
+<section id="callback" class="py-16 md:py-24 bg-navy text-white">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-3xl md:text-5xl font-black mb-6">Забота о людях — это инвестиция в устойчивость бизнеса</h2>
+      <p class="text-indigo-100 text-lg mb-8">Оставьте контакты. Мы свяжемся с вами и предложим формат программы под задачи вашей команды.</p>
+      <a href="tel:+79963362868" class="inline-flex items-center gap-3 text-2xl font-black">☎ +7 996 336 28 68</a>
+    </div>
+    <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-8 md:p-10 rounded-[2rem] text-slate-900 space-y-4 shadow-soft">
+      <input type="hidden" name="access_key" value="15714b9b-2d29-49d6-a550-a43ee3048bbb">
+      <input type="hidden" name="subject" value="Новая заявка с сайта TeamWellness">
+      <input type="hidden" name="redirect" value="https://teamwellness.pages.dev/#callback">
+      <input type="text" name="name" required placeholder="Ваше имя" class="w-full border border-slate-200 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <input type="email" name="email" required placeholder="Рабочий Email" class="w-full border border-slate-200 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <input type="tel" name="phone" required placeholder="+7 (999) 000-00-00" class="w-full border border-slate-200 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+      <textarea name="message" rows="4" placeholder="Кратко опишите запрос вашей команды" class="w-full border border-slate-200 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-2xl font-black">Отправить заявку</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="bg-[#06102f] text-slate-300 py-10">
+  <div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-6">
+    <div>
+      <div class="font-black text-white mb-2">TeamWellness</div>
+      <p class="text-sm text-slate-400">Психологическая поддержка бизнеса и команд</p>
+    </div>
+    <div class="flex flex-col md:items-end gap-2 text-sm">
+      <a href="tel:+79963362868" class="hover:text-white">+7 996 336 28 68</a>
+      <span>© TeamWellness</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
